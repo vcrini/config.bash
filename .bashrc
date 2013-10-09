@@ -119,3 +119,4 @@ export go_libs='-lm'
 export go_include="~/Dropbox/personale.git/src/c/erf"
 export go_flags=" -g -Wall -include $go_include/allheads.h -O3 " 
 alias go_c=" c99 -xc '-' $go_libs $go_flags "
+source ~/.tmuxinator.bash
