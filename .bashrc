@@ -124,3 +124,7 @@ source ~/.tmuxinator.bash
 xmodmap -e 'keycode 66 = Control_L'
 xmodmap -e 'clear Lock'
 xmodmap -e 'add Control = Control_L'
+#aliasing colorized subversion
+
+function svnd() { svn diff "$@" | colordiff | less -R; }
+function svnl() { svn log "$@" | colordiff | less -R; }
