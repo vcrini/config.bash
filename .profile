@@ -7,7 +7,6 @@
 # the default umask is set in /etc/profile; for setting the umask
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
-
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
@@ -27,8 +26,13 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
-export PATH=$PATH:$HOME/Dropbox/personale.git/src/bin
+#export PATH=/home/vcrini/downloads/jre1.7.0_51/bin:$PATH:$HOME/Dropbox/personale.git/src/bin
+export PATH=/home/vcrini/downloads/jre1.8.0/bin:$PATH:$HOME/Dropbox/personale.git/src/bin
 export VIMCLOJURE_SERVER_JAR="/home/vcrini/downloads/server-2.3.6.jar"
 export EDITOR=vi
-#export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
-PATH="/usr/local/sbin:$PATH"
+#export JAVA_HOME="/home/vcrini/downloads/jdk1.7.0_21/jre"
+#export JAVA_HOME="/home/vcrini/downloads/jre1.7.0_51"
+export JAVA_HOME="/home/vcrini/downloads/jre1.8.0"
+
+PATH="/usr/local/bin/:/usr/local/sbin:$PATH"
+. ~/.bash_aliases

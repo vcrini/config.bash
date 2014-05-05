@@ -16,8 +16,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000000
-HISTFILESIZE=1000000000
+HISTSIZE=10000000
+HISTFILESIZE=10000000000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -119,6 +119,7 @@ export go_libs='-lm'
 export go_include="~/Dropbox/personale.git/src/c/erf"
 export go_flags=" -g -Wall -include $go_include/allheads.h -O3 " 
 alias go_c=" c99 -xc '-' $go_libs $go_flags "
+export GPGKEY=050791E9
 source ~/.tmuxinator.bash
 #aliased capslock to CTRL
 xmodmap -e 'keycode 66 = Control_L'
