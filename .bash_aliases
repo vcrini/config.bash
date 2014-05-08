@@ -4,3 +4,6 @@ alias ssh_generic='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=
 alias ssh_support='ssh_generic support'
 alias ssh_devel='ssh_generic devel'
 alias ssh_root='ssh_generic root'
+alias cdmonolithtrunk='cd ~/subversion/dadamobile/backend/monolith/trunk/'
+alias cdmonolithqa='cd ~/subversion/dadamobile/backend/monolith/branches/QA/'
+alias cdmonolith='cd ~/subversion/dadamobile/backend/monolith/'
