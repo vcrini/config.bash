@@ -26,15 +26,13 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
-#export PATH=/home/vcrini/downloads/jre1.7.0_51/bin:$PATH:$HOME/Dropbox/personale.git/src/bin
-#export PATH=/home/vcrini/downloads/jre1.8.0/bin:$PATH:$HOME/Dropbox/personale.git/src/bin
-export PATH=/home/vcrini/downloads/jdk1.8.0_20/bin:$PATH:$HOME/Dropbox/personale.git/src/bin
+export JAVA_HOME="/home/vcrini/downloads/jre1.7.0_51"
+#export JAVA_HOME="/home/vcrini/downloads/jre1.8.0"
+#export JAVA_HOME="/home/vcrini/downloads/jdk1.8.0_20"
+export ANDROID_HOME=$HOME/downloads/android-sdk-linux
+export PATH=$JAVA_HOME/bin:$PATH:$HOME/Dropbox/personale.git/src/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export VIMCLOJURE_SERVER_JAR="/home/vcrini/downloads/server-2.3.6.jar"
 export EDITOR=vi
-#export JAVA_HOME="/home/vcrini/downloads/jdk1.7.0_21/jre"
-#export JAVA_HOME="/home/vcrini/downloads/jre1.7.0_51"
-#export JAVA_HOME="/home/vcrini/downloads/jre1.8.0"
-export JAVA_HOME="/home/vcrini/downloads/jdk1.8.0_20"
 
 PATH="/usr/local/bin/:/usr/local/sbin:$PATH"
 . ~/.bash_aliases
