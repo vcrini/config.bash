@@ -32,11 +32,11 @@ fi
 #export JAVA_HOME="/home/vcrini/downloads/jre1.8.0_25"
 #export JAVA_HOME="/home/vcrini/downloads/jdk1.8.0_20"
 export ANDROID_HOME=$HOME/downloads/android-sdk-linux
-#export PATH=$JAVA_HOME/bin:$PATH:$HOME/Dropbox/personale.git/src/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export PATH=$JAVA_HOME/bin:$PATH:$HOME/Dropbox/personale.git/src/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export VIMCLOJURE_SERVER_JAR="/home/vcrini/downloads/server-2.3.6.jar"
 export EDITOR=vi
 
 PATH="/usr/local/bin/:/usr/local/sbin:$PATH"
 #path for chromedriver
-PATH="/home/vcrini/documents/env/robot/local/node_modules/appium/build/chromedriver/linux/:$PATH"
+#PATH="/home/vcrini/documents/env/robot/local/node_modules/appium/build/chromedriver/linux/:$PATH"
 . ~/.bash_aliases
