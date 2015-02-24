@@ -40,3 +40,8 @@ PATH="/usr/local/bin/:/usr/local/sbin:$PATH"
 #path for chromedriver
 #PATH="/home/vcrini/documents/env/robot/local/node_modules/appium/build/chromedriver/linux/:$PATH"
 . ~/.bash_aliases
+#aliased capslock to CTRL
+xmodmap -e 'keycode 66 = Control_L'
+xmodmap -e 'clear Lock'
+xmodmap -e 'add Control = Control_L'
+#aliasing colorized subversion
