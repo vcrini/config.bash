@@ -114,13 +114,11 @@ fi
 #	exit
 #fi
 export WORKON_HOME=~/documents/env
-source /usr/local/bin/virtualenvwrapper.sh
 export go_libs='-lm' 
 export go_include="~/Dropbox/personale.git/src/c/erf"
 export go_flags=" -g -Wall -include $go_include/allheads.h -O3 " 
 alias go_c=" c99 -xc '-' $go_libs $go_flags "
 export GPGKEY=050791E9
-source ~/.tmuxinator.bash
 
 function svnd() { svn diff "$@" | colordiff | less -R; }
 function svnl() { svn log "$@" | colordiff | less -R; }

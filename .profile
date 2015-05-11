@@ -34,7 +34,7 @@ fi
 export ANDROID_HOME=$HOME/downloads/android-sdk-linux
 export PATH=$JAVA_HOME/bin:$PATH:$HOME/Dropbox/personale.git/src/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export VIMCLOJURE_SERVER_JAR="/home/vcrini/downloads/server-2.3.6.jar"
-export EDITOR=vi
+export EDITOR=vim
 
 PATH="/usr/local/bin/:/usr/local/sbin:$PATH"
 #path for chromedriver
